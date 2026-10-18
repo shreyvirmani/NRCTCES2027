@@ -1,6 +1,6 @@
 # NCRTCES 2027 Conference Website Demo
 
-A responsive, frontend-only demonstration for the proposed National Conference on Recent Trends in Communication, Electronics and Systems at Maharaja Surajmal Institute of Technology. Dates, venue, committee, contact information, research tracks and submission details are explicitly provisional pending faculty confirmation.
+A responsive, frontend-only demonstration for the 3rd National Conference on Recent Trends in Climate Change, Energy and Sustainability (NCRTCES-2027), hosted by Maharaja Surajmal Institute Of Technology. Conference dates are March 16th – 17th 2027. The submission and registration deadlines are placeholders pending confirmation.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ The production output is generated in `dist/`.
 
 ## Content configuration
 
-Edit `src/data/conferenceConfig.js` to update conference details, dates, venue, theme, tracks, committee, contact information, submission URL and fictional dashboard sample records. The public interest form validates locally for demonstration and does not send or persist its values. Do not add real personal information to the sample dataset.
+Edit `src/data/conferenceConfig.js` to update conference details, the countdown target, important dates, venue, theme, tracks, committee, contact information, submission URL and fictional dashboard sample records. The supplied MSIT and NCRTCES logos and hero backgrounds are in `public/assets`. The public interest form validates locally for demonstration and does not send or persist its values. Do not add real personal information to the sample dataset.
 
 ## Vercel deployment
 
