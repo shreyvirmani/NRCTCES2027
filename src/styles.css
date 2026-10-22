@@ -467,6 +467,10 @@ html,body,#root,main{background:#fff;color:var(--ink)}
   border-radius: 0;
 }
 .contact-updated, .footer { background: #102a43 !important; }
+.conference-glass { background: #f0f6fce8 !important; }
+@media (max-width: 700px) {
+  .header-actions { margin-left: auto !important; }
+}
 
 /* Prevent any translated or long mobile content from widening the viewport. */
 html, body, #root, main { max-width: 100%; }
