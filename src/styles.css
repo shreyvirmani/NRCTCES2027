@@ -176,3 +176,273 @@ html,body,#root,main{background:#0e2742}
 .conference-overview,.floating-dates{color:#fff}
 .conference-overview>p{color:#fff}
 @media(max-width:700px){.conference-glass{padding:18px 15px 20px}.ministry-logo{width:94px;height:86px}.conference-logos img{width:66px;height:66px}.conference-glass h1{font-size:clamp(20px,5vw,28px)}.conference-institution{font-size:18px}.conference-date{font-size:17px}}
+
+
+/* Previous Conferences dropdown */
+.previous-menu{position:relative;display:flex;align-items:center}
+.nav-dropdown-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 0;border:0;background:transparent;color:#e7f0ff;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.nav-dropdown-toggle svg{transition:transform .18s ease}
+.nav-dropdown-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.previous-menu-panel{position:absolute;top:calc(100% + 10px);left:50%;z-index:50;min-width:210px;padding:8px;transform:translateX(-50%);border:1px solid #dce5ef;border-radius:10px;background:#fff;color:#183b59;box-shadow:0 14px 32px #06192f38}
+.previous-menu-panel a{display:block;padding:12px 14px;border-radius:6px;color:#183b59;font-size:14px;font-weight:700;transition:background .16s ease,color .16s ease}
+.previous-menu-panel a:hover,.previous-menu-panel a:focus-visible{background:#edf4fc;color:#0e2742}
+.previous-menu-panel[hidden]{display:none}
+@media(max-width:700px){
+  .previous-menu{display:block;width:100%}
+  .nav-dropdown-toggle{width:100%;min-height:44px;justify-content:space-between;padding:8px 3px;text-align:left;font-size:14px}
+  .previous-menu-panel{position:static;width:100%;min-width:0;margin:2px 0 8px;padding:5px;transform:none;border-color:#dce5ef;background:#fff;box-shadow:0 8px 18px #06192f22}
+  .previous-menu-panel a{min-height:44px;padding:12px 14px;color:#183b59}
+}
+@media(max-width:850px) and (min-width:701px){
+  .header-inner{padding-left:22px;padding-right:22px}
+  .institution-id{display:none}
+  .header-actions{margin-left:auto}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:20;background:#0e2742;border-bottom:1px solid #ffffff35;padding:10px 22px 20px;align-items:stretch;gap:0;flex-direction:column;box-shadow:0 14px 20px #0d28301a}
+  .nav.open{display:flex;max-height:calc(100vh - 78px);overflow-y:auto;overscroll-behavior:contain}
+  .nav>a{padding:13px 3px;border-bottom:1px solid #ffffff22;font-size:14px}
+  .nav .mobile-admin{display:flex}
+  .previous-menu{display:block;width:100%}
+  .nav-dropdown-toggle{width:100%;min-height:44px;justify-content:space-between;padding:8px 3px;text-align:left;font-size:14px}
+  .previous-menu-panel{position:static;width:100%;min-width:0;margin:2px 0 8px;padding:5px;transform:none;border-color:#dce5ef;background:#fff;box-shadow:0 8px 18px #06192f22}
+  .previous-menu-panel a{min-height:44px;padding:12px 14px;color:#183b59}
+  .header-register{min-height:44px}
+  .menu-toggle{display:flex;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+}
+
+/* Content sections added from the 2026 structural reference, using only confirmed 2027 details. */
+.conference-overview{padding-top:74px;padding-bottom:76px}
+.overview-copy{max-width:980px;margin:0 auto;display:grid;gap:18px}
+.overview-copy p{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.8;text-align:justify;color:#f2f6ff}
+.guidelines-section,.partners-section{display:block;max-width:1120px}
+.guidelines-section .section-head,.partners-section .section-head{margin-bottom:28px}
+.guideline-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.info-panel,.acknowledgement-panel{padding:24px;border:1px solid #ffffff42;border-radius:12px;background:#ffffff0b;color:#f4f7fb}
+.info-panel h3,.acknowledgement-panel h3{margin:12px 0 9px;font:700 18px/1.35 Manrope,sans-serif;color:#fff}
+.info-panel p,.acknowledgement-panel p{margin:0;color:#d7e1ec;font-size:13px;line-height:1.75}
+.status-label{display:inline-flex;margin-top:18px;padding:7px 10px;border:1px solid #ffffff38;border-radius:999px;color:#f0dba8;font-size:11px;font-weight:700}
+.partners-section>.info-panel{max-width:590px}
+.acknowledgement-panel{max-width:760px;margin:26px auto 0;text-align:center;background:#ffffff10}
+.venue-section{display:grid;grid-template-columns:1fr 1.05fr;gap:52px;align-items:center}
+.venue-card{display:flex;align-items:center;gap:14px;margin-top:26px;padding:18px;border:1px solid #ffffff42;border-radius:10px;background:#ffffff0b;color:#fff}
+.venue-card>svg{color:#e4c885;flex:none}
+.venue-card>div{display:grid;gap:5px;flex:1;min-width:0}
+.venue-card strong{font-size:13px;line-height:1.5}.venue-card span{color:#cbd8e5;font-size:12px}
+.venue-card .button{white-space:nowrap}
+.venue-image-wrap{height:320px;overflow:hidden;border:1px solid #ffffff3c;border-radius:14px;background:#183b56}
+.venue-image-wrap img{width:100%;height:100%;object-fit:cover}
+.nav-dropdown-toggle{font-size:11px;font-weight:500}
+.previous-menu-panel a{display:flex;align-items:center;justify-content:space-between}
+@media(max-width:1100px) and (min-width:851px){.institution-id{display:none}.nav{gap:13px}.header-actions{margin-left:16px}}
+@media(max-width:850px){.guideline-grid{grid-template-columns:1fr 1fr}.venue-section{grid-template-columns:1fr;gap:28px}.venue-image-wrap{height:280px}}
+@media(max-width:600px){.overview-copy p{text-align:left}.guideline-grid{grid-template-columns:1fr}.info-panel,.acknowledgement-panel{padding:20px}.venue-card{flex-wrap:wrap}.venue-card>div{flex-basis:calc(100% - 50px)}.venue-card .button{width:100%}.venue-image-wrap{height:220px}}
+
+/* NCRTCES 2027 orange and blue identity */
+:root{--navy:#102a43;--navy2:#1769aa;--ink:#243447;--muted:#64748b;--paper:#fff;--line:#d6e2ed;--orange:#f47b20;--orange-light:#ff9f43;--blue:#1769aa;--bright-blue:#2788d8;--light-blue:#f0f6fc}
+html,body,#root,main{background:#fff;color:var(--ink)}
+.header{background:var(--navy)!important;border-bottom-color:#ffffff2a}
+.header .brand-mark{border-color:#ffffff65;color:var(--orange-light)}
+.header .brand-copy strong,.header .brand-copy small,.header .institution-id,.header .nav>a,.header .nav-dropdown-toggle{color:#fff}
+.header .brand-copy strong i{color:var(--orange-light)}
+.header .nav>a:hover,.header .nav>a:focus-visible,.header .nav-dropdown-toggle:hover{color:#ffb368}
+.header-register,.button-orange{background:var(--orange)!important;border-color:var(--orange)!important;color:#fff!important}
+.header-register:hover,.button-orange:hover{background:#d9630b!important;border-color:#d9630b!important;color:#fff!important}
+.button-orange{display:inline-flex;align-items:center;gap:9px;padding:0 17px;min-height:44px;font-size:12px;font-weight:800}
+.button-light-outline{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:0 17px;border:1px solid #1769aa;background:#fff;color:#14598f;font-size:12px;font-weight:800}
+.button-light-outline:hover{background:#e9f4fd}
+.conference-hero{background:linear-gradient(125deg,#102a43 0%,#1769aa 67%,#f47b20 160%)}
+.hero-shade{background:linear-gradient(115deg,#102a4399,#1769aa30 58%,#102a436e)}
+.conference-glass{background:rgba(255,255,255,.93);border:1px solid #fff;box-shadow:0 18px 55px #071e3545;border-radius:14px}
+.conference-glass h1{color:#102a43;max-width:950px}
+.conference-institution{color:#db650e}
+.conference-date{color:#1769aa;text-shadow:none}
+.hero-venue{margin:8px 0 0;color:#42576c;font-size:14px;font-weight:600}
+.conference-glass .hero-actions{justify-content:center;margin-top:19px;gap:12px;flex-wrap:wrap}
+.conference-hero .hero-bottom{color:#fff}
+.conference-hero .hero-bottom a{color:#ffd3a8}
+.hero-arrow{color:#102a43;border-color:#fff}
+.countdown{border-color:#d2e2ee;background:#f0f6fce8;box-shadow:0 10px 28px #06192f30}
+.countdown-tile{background:#fff;border:1px solid #d7e4ee;color:#102a43}
+.countdown-colon{color:#f47b20}
+.conference-overview,.floating-dates{background:#fff!important;color:#243447;padding:78px max(24px,calc((100vw - 1050px)/2))}
+.conference-overview{background:radial-gradient(ellipse at 8% 0%,rgba(244,123,32,.11),transparent 46%),radial-gradient(ellipse at 92% 100%,rgba(255,159,67,.13),transparent 44%),#fff!important}
+.tracks-section .section-title>p,.dates-updated .section-title>p,.committee-section .section-title>p,.guidelines-section .section-title>p,.registration-section .section-title>p,.partners-section .section-title>p,.venue-section .section-title>p{color:#64748b}
+.conference-overview .overview-heading h2,.floating-dates .overview-heading h2{color:#1769aa;text-transform:uppercase}
+.conference-overview .overview-heading>span:last-child,.floating-dates .overview-heading>span{background:#f47b20}
+.conference-overview>p{max-width:920px;color:#42566b;font-size:17px;line-height:1.85;text-align:left}
+.conference-overview>p strong{color:#1769aa}
+.tracks-section{background:radial-gradient(ellipse at 10% 0%,rgba(23,105,170,.14),transparent 48%),radial-gradient(ellipse at 92% 100%,rgba(87,157,220,.12),transparent 44%),#f0f6fc!important;color:#243447}
+.tracks-section .section-title h2,.dates-updated .section-title h2,.committee-section .section-title h2,.guidelines-section .section-title h2,.registration-section .section-title h2,.partners-section .section-title h2,.venue-section .section-title h2{color:#102a43}
+.tracks-section .section-title h2 em,.dates-updated .section-title h2 em,.committee-section .section-title h2 em,.guidelines-section .section-title h2 em,.registration-section .section-title h2 em,.partners-section .section-title h2 em,.venue-section .section-title h2 em{color:#1769aa}
+.track-card-grid{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.track-card{position:relative;min-height:144px;padding:21px 20px 23px;border:1px solid #d5e2ed;border-radius:8px;background:#fff;box-shadow:0 5px 16px #1839540b;display:flex;flex-direction:column;gap:12px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.track-card:hover{transform:translateY(-3px);border-color:#f4a064;box-shadow:0 10px 24px #18395416}
+.track-card .track-num{color:#d96913;font-weight:800;letter-spacing:.11em}
+.track-card h3{margin:0;color:#1769aa;font:700 15px/1.5 Manrope,sans-serif}
+.track-card-rule{margin-top:auto;width:36px;height:3px;background:#f47b20;border-radius:2px}
+.dates-updated{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:start;max-width:none;background:#fff!important}
+.dates-updated .dates-intro{padding-top:7px}
+.date-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.date-card{min-height:116px;padding:17px 18px;border:1px solid #d8e3ec;border-left:3px solid #1769aa;border-radius:6px;background:#f8fbfe;display:grid;grid-template-columns:32px 1fr;column-gap:9px;align-content:center}
+.date-card .date-index{grid-row:span 2;color:#8798a8;font-size:11px;font-weight:700}
+.date-card h3{margin:0;color:#334c63;font-size:13px;line-height:1.4}
+.date-card time{margin-top:8px;color:#1769aa;font:700 16px Manrope,sans-serif}
+.date-card-upcoming{border-left-color:#f47b20;background:#fff8f1}
+.date-card-upcoming .date-index,.date-card-upcoming time{color:#d9630b}
+.committee-section{background:#f0f6fc!important;color:#243447}
+.committee-list{border-color:#d5e1eb}
+.committee-row{border-color:#d5e1eb}
+.committee-row>span{color:#df6a13}.committee-row strong{color:#244867}.committee-row small{color:#64788a}.committee-row svg{color:#8a9cad}
+.guidelines-section,.partners-section{background:#fff!important}
+.guidelines-section .section-index,.partners-section .section-index,.registration-section .section-index,.venue-section .section-index,.dates-updated .section-index{color:#db6a18}
+.guideline-grid{align-items:stretch}
+.guideline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.info-panel,.acknowledgement-panel{border:1px solid #d8e4ef;border-radius:8px;background:#fff;color:#243447;box-shadow:0 5px 18px #153c5c0b}
+.info-panel .eyebrow,.acknowledgement-panel .eyebrow{color:#d96c1d}
+.info-panel h3,.acknowledgement-panel h3{color:#174f7a}
+.info-panel p,.acknowledgement-panel p{color:#53677b}
+.guideline-grid .info-panel ul{padding-left:20px;margin:12px 0;color:#40576d;font-size:13px;line-height:1.75}
+.guideline-grid .info-panel li{padding:3px 0 3px 3px}
+.guideline-grid .info-panel li::marker{color:#f47b20}
+.guideline-grid .info-panel h4{margin:18px 0 7px;color:#174f7a;font-size:14px}
+.policy-note{margin-top:12px!important;padding:10px 12px;border-left:3px solid #f4a261;background:#fff8f1;font-size:11px!important}
+.cmt-acknowledgement{margin:15px 0 0!important;color:#42566b!important;font-size:13px!important;line-height:1.8!important}
+.publication-note{padding:12px 14px;border-left:3px solid #f47b20;background:#fff7ef;font-size:12px!important}
+.status-label{border-color:#e5d4c4;color:#b85008;background:#fff8f1}
+.registration-section{background:#f0f6fc!important}
+.registration-section .info-panel{align-self:center}
+.registration-panel .button{margin-top:16px}
+.partners-section>.info-panel{max-width:100%;background:#f8fbfe;box-shadow:none}
+.acknowledgement-panel{max-width:100%;margin:15px 0 0;text-align:left;background:#fff}
+.venue-section{background:#f0f6fc!important}
+.venue-card{border-color:#d7e3ed;background:#fff;color:#243447;border-radius:8px}
+.venue-card>svg{color:#ef781d}
+.venue-card strong{color:#174f7a}.venue-card span{color:#64788a}
+.venue-image-wrap{border:1px solid #d5e2ed;border-radius:8px;box-shadow:0 9px 28px #102a431c}
+.contact-updated{background:#102a43!important;color:#fff}
+.contact-updated h2{color:#fff}.contact-updated h2 em{color:#ffad60}
+.contact-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.contact-card{min-width:0;min-height:118px;padding:16px;border:1px solid #ffffff32;border-radius:7px;background:#ffffff0b;color:#fff;display:grid;align-content:start;gap:7px;transition:background .16s ease,border-color .16s ease}
+.contact-card:hover{background:#ffffff16;border-color:#f47b20}
+.contact-card svg{color:#ffa151}
+.contact-card span{font-size:11px;color:#c4d4e3}
+.contact-card strong{font-size:13px;line-height:1.55;color:#fff;overflow-wrap:anywhere}
+.footer{background:#0a2034!important;color:#fff}
+.footer .brand-copy strong{color:#fff}.footer .brand-copy strong i{color:#ff9f43}
+.footer-top>p,.footer-top>p a{color:#d2dfeb}
+.footer-links a:hover,.footer-bottom a{color:#ffab5b}
+.news-tag,.important-date-pill{background:#fff;border-color:#d8e3ec;color:#243447;box-shadow:none;backdrop-filter:none}
+.important-date-pill strong{color:#1769aa}.news-tag{color:#d75e0c}
+@media(max-width:900px){.track-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dates-updated{grid-template-columns:1fr;gap:24px}.paper-guidelines-panel{grid-column:auto}}
+@media(max-width:600px){.track-card-grid,.date-grid,.contact-card-grid{grid-template-columns:1fr}.track-card{min-height:unset}.date-card{min-height:100px}.conference-overview,.floating-dates{padding:52px 22px}.conference-overview>p{font-size:16px;line-height:1.75}.conference-glass .hero-actions{gap:9px}.conference-glass .hero-actions a{width:100%;justify-content:center}.hero-venue{font-size:12px}.contact-card{min-height:unset}}
+.section-index,.guidelines-section .section-index,.partners-section .section-index,.registration-section .section-index,.venue-section .section-index,.dates-updated .section-index{color:#a74300}
+.conference-institution{color:#b54700}
+.track-card .track-num,.info-panel .eyebrow,.acknowledgement-panel .eyebrow{color:#a74300}
+.date-card-upcoming .date-index,.date-card-upcoming time{color:#a74300}
+.date-card.scroll-reveal{transform:translate3d(48px,0,0);transition-delay:var(--slide-delay,0ms)}
+.date-card.scroll-reveal.is-revealed{transform:translate3d(0,0,0)}
+.header-register,.button-orange{background:#bd4d00!important;border-color:#bd4d00!important;color:#fff!important}
+.header-register:hover,.button-orange:hover{background:#993d00!important;border-color:#993d00!important;color:#fff!important}
+
+/* Keep the institution label visually separate from the first nav link. */
+.header-inner { max-width: 1600px; }
+.institution-id { flex: 0 1 250px; min-width: 0; margin-left: 24px; padding-left: 20px; line-height: 1.4; white-space: normal; }
+.nav { flex: 0 0 auto; gap: clamp(12px, 1.35vw, 22px); }
+.header-actions { flex: 0 0 auto; margin-left: 20px; }
+.conference-overview .overview-heading { width: min(100%, 920px); margin-inline: auto; align-items: center; text-align: center; }
+
+@media (min-width: 1201px) and (max-width: 1450px) {
+  .institution-id { display: none; }
+}
+
+/* Mobile-first layout refinements for the conference site. */
+@media (max-width: 1200px) {
+  .institution-id { display: none; }
+  .header-inner { gap: 14px; }
+  .nav { gap: clamp(10px, 1.25vw, 18px); }
+  .nav > a, .nav-dropdown-toggle { white-space: nowrap; }
+}
+
+@media (max-width: 700px) {
+  .header-inner { padding-inline: 16px; }
+  .header-actions { gap: 8px; }
+  .brand { min-width: 0; }
+  .nav.open { padding: 8px 18px max(20px, env(safe-area-inset-bottom)); }
+  .nav > a { min-height: 46px; display: flex; align-items: center; }
+  .previous-menu-panel { margin-bottom: 8px; }
+
+  .conference-hero { min-height: 0; padding: 82px 14px 84px; }
+  .hero-content { width: 100%; gap: 16px; }
+  .conference-glass { width: min(100%, 560px); min-height: 0; margin-inline: auto; }
+  .conference-logos { width: 100%; justify-content: space-between; }
+  .conference-glass h1 { max-width: 100%; line-height: 1.2; overflow-wrap: anywhere; }
+  .conference-institution, .conference-date { line-height: 1.35; }
+  .conference-glass .hero-actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .conference-glass .hero-actions .button { width: 100%; min-height: 46px; }
+  .countdown { width: min(100%, 380px); margin-inline: auto; }
+  .countdown-tiles { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: center; }
+  .countdown-tile { min-width: 0; width: 100%; }
+  .countdown-colon { text-align: center; }
+
+  .section, .tracks-section, .committee-section, .guidelines-section,
+  .registration-section, .partners-section, .venue-section,
+  .dates-updated, .conference-overview, .floating-dates, .contact-section {
+    padding-inline: 20px;
+  }
+  .section-title h2 { font-size: clamp(32px, 9vw, 42px); line-height: 1.12; }
+  .section-title > p { max-width: 42rem; line-height: 1.65; }
+  .overview-heading h2 { font-size: clamp(25px, 7vw, 34px); }
+  .conference-overview > p { max-width: 42rem; margin-inline: auto; line-height: 1.75; }
+
+  .section-head { width: 100%; }
+  .scope-note { align-items: flex-start; width: 100%; }
+  .scope-note p { margin: 0; line-height: 1.55; }
+  .track-card-grid, .date-grid, .guideline-grid, .contact-card-grid { grid-template-columns: minmax(0, 1fr); }
+  .track-card { width: 100%; min-height: 0; padding: 18px; }
+  .track-card h3 { font-size: 16px; line-height: 1.45; }
+  .date-card { min-height: 0; grid-template-columns: 28px minmax(0, 1fr); row-gap: 6px; padding: 16px; }
+  .date-card time { grid-column: 2; margin-top: 0; font-size: 15px; }
+  .committee-list, .committee-row { min-width: 0; }
+  .committee-row { grid-template-columns: 27px minmax(0, 1fr) 17px; gap: 7px; padding: 12px 0; }
+  .committee-row strong { font-size: 13px; line-height: 1.4; }
+  .committee-row small { grid-column: 2; font-size: 11px; line-height: 1.45; }
+  .committee-row svg { grid-column: 3; grid-row: 1; }
+
+  .info-panel, .acknowledgement-panel { min-width: 0; padding: 19px; }
+  .info-panel h3 { line-height: 1.35; }
+  .guideline-grid .info-panel ul { padding-left: 18px; overflow-wrap: anywhere; }
+  .registration-panel .button { width: 100%; min-height: 46px; white-space: normal; }
+  .venue-card { align-items: flex-start; gap: 12px; }
+  .venue-card > div { min-width: 0; flex: 1 1 calc(100% - 42px); }
+  .venue-card span, .venue-card strong { overflow-wrap: anywhere; }
+  .venue-image-wrap { width: 100%; height: auto; aspect-ratio: 16 / 10; }
+  .venue-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+  .contact-section { grid-template-columns: minmax(0, 1fr); }
+  .contact-card-grid { gap: 10px; }
+  .contact-card { min-width: 0; overflow-wrap: anywhere; }
+  .footer-top, .footer-bottom { min-width: 0; }
+  .footer-top > p { overflow-wrap: anywhere; }
+  .footer-links { gap: 12px 18px; }
+}
+
+@media (max-width: 390px) {
+  .header-inner { padding-inline: 12px; gap: 8px; }
+  .brand-copy strong { font-size: 14px; }
+  .brand-copy small { font-size: 7px; }
+  .header-actions { gap: 4px; }
+  .header-register { padding-inline: 8px; font-size: 9px; }
+  .menu-toggle { min-width: 42px; min-height: 44px; }
+  .conference-hero { padding-inline: 10px; }
+  .conference-glass { padding-inline: 13px; }
+  .countdown { padding: 6px; }
+  .countdown-tiles { gap: 2px; }
+  .countdown-tile { padding-inline: 2px; }
+  .countdown-tile strong { font-size: 18px; }
+  .countdown-tile span { font-size: 9px; }
+  .countdown-colon { font-size: 15px; }
+  .section, .tracks-section, .committee-section, .guidelines-section,
+  .registration-section, .partners-section, .venue-section,
+  .dates-updated, .conference-overview, .floating-dates, .contact-section {
+    padding-inline: 16px;
+  }
+}
