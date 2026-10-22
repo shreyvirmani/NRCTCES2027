@@ -446,3 +446,24 @@ html,body,#root,main{background:#fff;color:var(--ink)}
     padding-inline: 16px;
   }
 }
+
+/* Align the compact navigation and keep its controls legible on mobile. */
+@media (max-width: 700px) {
+  .header { background: #102a43 !important; }
+  .header .menu-toggle { display: inline-flex; color: #fff !important; background: transparent; }
+  .header .menu-toggle svg { width: 24px; height: 24px; stroke-width: 2.5; }
+  .header .nav, .header .nav.open { background: #102a43 !important; }
+  .header .nav > a, .header .nav-dropdown-toggle, .header .mobile-admin { color: #fff !important; }
+  .header .nav > a, .header .previous-menu { border-color: #ffffff30; }
+  .header .previous-menu-panel { background: #fff !important; }
+  .header .previous-menu-panel a { color: #183b59 !important; }
+}
+
+/* The first overview label is text; only the final span is the underline. */
+.conference-overview .overview-heading > span:first-child {
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+}
+.contact-updated, .footer { background: #102a43 !important; }

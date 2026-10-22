@@ -3,7 +3,7 @@ import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, ChevronDown, Circl
 import { CONFERENCE_START, conferenceConfig as c, sampleRegistrations } from './data/conferenceConfig';
 
 const navItems = [['Home','#top'],['Overview','#about'],['Tracks','#tracks'],['Important dates','#dates'],['Committee','#committee'],['Guidelines','#guidelines'],['Contact','#contact']];
-function Brand(){return <a className="brand" href="/" aria-label={`${c.acronym} home`}><img className="brand-logo" src={c.assets.ncrtces} alt=""/><span className="brand-copy"><strong>{c.acronym}<i>’{c.year.slice(2)}</i></strong><small>{c.shortInstitution} · NEW DELHI</small></span></a>}
+function Brand(){return <a className="brand" href="/" aria-label={`${c.acronym} home`}><img className="brand-logo" src={c.assets.msit} alt=""/><span className="brand-copy"><strong>{c.acronym}<i>’{c.year.slice(2)}</i></strong><small>{c.shortInstitution} · NEW DELHI</small></span></a>}
 function Header(){
   const [open,setOpen]=useState(false);
   const [previousOpen,setPreviousOpen]=useState(false);
