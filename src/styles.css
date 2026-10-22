@@ -467,3 +467,9 @@ html,body,#root,main{background:#fff;color:var(--ink)}
   border-radius: 0;
 }
 .contact-updated, .footer { background: #102a43 !important; }
+
+/* Prevent any translated or long mobile content from widening the viewport. */
+html, body, #root, main { max-width: 100%; }
+@media (max-width: 700px) {
+  html, body, #root, main { overflow-x: clip; }
+}
