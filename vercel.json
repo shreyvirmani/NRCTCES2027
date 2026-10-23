@@ -1,1 +1,23 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
+{
+  "redirects": [
+    {
+      "source": "/conferences/2026",
+      "destination": "/conferences/2026/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/conferences/2026/",
+      "destination": "/api/archive-2026"
+    },
+    {
+      "source": "/conferences/2026/:path*",
+      "destination": "/api/archive-2026/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
