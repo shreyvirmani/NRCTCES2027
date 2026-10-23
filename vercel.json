@@ -12,8 +12,8 @@
       "destination": "/api/archive-2026"
     },
     {
-      "source": "/conferences/2026/:path*",
-      "destination": "/api/archive-2026/:path*"
+      "source": "/conferences/2026/:archivePath*",
+      "destination": "/api/archive-2026"
     },
     {
       "source": "/(.*)",
