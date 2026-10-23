@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/conferences/2024",
+      "destination": "/conferences/2024/",
+      "permanent": false
+    },
+    {
       "source": "/conferences/2026",
       "destination": "/conferences/2026/",
       "permanent": false
@@ -8,11 +13,19 @@
   ],
   "rewrites": [
     {
+      "source": "/conferences/2024/",
+      "destination": "/api/archive-2024"
+    },
+    {
+      "source": "/conferences/2024/:__archiveProxyPath*",
+      "destination": "/api/archive-2024"
+    },
+    {
       "source": "/conferences/2026/",
       "destination": "/api/archive-2026"
     },
     {
-      "source": "/conferences/2026/:archivePath*",
+      "source": "/conferences/2026/:__archiveProxyPath*",
       "destination": "/api/archive-2026"
     },
     {
