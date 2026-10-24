@@ -488,6 +488,14 @@ html,body,#root,main{background:#fff;color:var(--ink)}
   .overview-copy p { text-align: center; }
 }
 @media (max-width: 700px) {
+  /* Preserve the desktop hero-card hierarchy on mobile: logos, title, details, actions. */
+  .conference-logos { order: 0; justify-content: center; align-self: center; }
+  .conference-logos img { width: clamp(62px, 18vw, 76px); height: clamp(62px, 18vw, 76px); }
+  .conference-glass h1 { order: 1; margin-top: 8px; font-size: clamp(22px, 6vw, 30px); line-height: 1.16; text-align: center; }
+  .conference-institution { order: 2; text-align: center; }
+  .conference-date { order: 3; text-align: center; }
+  .hero-venue { order: 4; width: 100%; text-align: center; }
+  .conference-glass .hero-actions { order: 5; }
   .header-actions { margin-left: auto !important; }
 }
 
