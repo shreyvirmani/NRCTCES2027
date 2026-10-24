@@ -7,12 +7,9 @@ export const committees = [
       { role: 'Co-Conveners', name: 'Dr. Meena Rao, Dr. Shaifali M. Arora' },
     ],
   },
-  { name: 'Patrons', members: [] },
   { name: 'Organising Chair', members: [{ name: 'Prof. (Dr.) A. K. Srivastava' }] },
   { name: 'Convener', members: [{ name: 'Dr. Sudesh Pahal' }] },
   { name: 'Co-Conveners', members: [{ name: 'Dr. Meena Rao' }, { name: 'Dr. Shaifali M. Arora' }] },
-  { name: 'Program Committee', members: [] },
-  { name: 'Advisory Committee', members: [] },
   {
     name: 'Technical Program Committee',
     members: ['Prof. (Dr.) Pardeep Sangwan', 'Prof. (Dr.) Puneet Azad', 'Prof. (Dr.) Neeru Rathee', 'Dr. Sudesh Pahal', 'Dr. Meena Rao', 'Dr. Shaifali M. Arora', 'Dr. Richa Gupta', 'Dr. Aman Dahiya', 'Dr. Dinesh Sheoran'].map(name => ({ name })),

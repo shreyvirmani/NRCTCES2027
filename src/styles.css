@@ -519,7 +519,7 @@ html, body, #root, main { max-width: 100%; }
 .registration-underline { width: 110px; height: 3px; border-radius: 3px; background: #1769aa; }
 .registration-closed { margin: 24px 0 8px; color: #102a43; font-size: clamp(20px, 2.4vw, 26px); font-weight: 800; }
 .fee-confirmation { max-width: 720px; margin: 0 auto 22px; color: #a74300; font-size: 14px; line-height: 1.6; }
-.registration-table-wrap { width: min(100%, 880px); margin: 0 auto; overflow-x: auto; border: 1px solid #d7e0e8; border-radius: 8px; background: #fff; }
+.registration-fee-table-wrap { width: min(100%, 880px); margin: 0 auto; overflow-x: auto; border: 1px solid #d7e0e8; border-radius: 8px; background: #fff; }
 .registration-fees { width: 100%; border-collapse: collapse; text-align: left; }
 .registration-fees th, .registration-fees td { padding: 15px 18px; border-bottom: 1px solid #e3e7eb; }
 .registration-fees thead th { background: #1769aa; color: #fff; font-size: 14px; font-weight: 750; }
@@ -540,6 +540,7 @@ html, body, #root, main { max-width: 100%; }
   .committee-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
   .committee-tabs [role="tab"] { min-height: 48px; padding: 10px; font-size: 12px; }
   .committee-members ul { grid-template-columns: minmax(0, 1fr); }
+  .registration-fee-table-wrap { max-width: 100%; }
   .registration-fees { min-width: 600px; }
   .registration-fees th, .registration-fees td { padding: 13px 14px; }
   .registration-fees tbody th, .registration-fees tbody td { font-size: 15px; }
