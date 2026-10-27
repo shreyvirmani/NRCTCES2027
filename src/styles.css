@@ -538,14 +538,14 @@ html, body, #root, main { max-width: 100%; }
 .registration-fees tbody td { color: #344d62; font-variant-numeric: tabular-nums; }
 .registration-fees tbody th,
 .registration-fees tbody td { font-size: 17px; }
-.acknowledgements-page { min-height: calc(100svh - 190px); padding: clamp(70px, 10vw, 130px) 22px; display: grid; place-items: start center; background: radial-gradient(ellipse at 12% 0%, #f47b2012, transparent 42%), #f0f6fc; }
-.acknowledgements-content { width: min(100%, 850px); padding: clamp(26px, 5vw, 54px); border: 1px solid #d8e3ec; border-radius: 8px; background: #fff; box-shadow: 0 12px 34px #102a4310; }
-.acknowledgements-content h1 { margin: 12px 0 16px; color: #102a43; font: 800 clamp(30px, 4vw, 42px)/1.2 Manrope, sans-serif; }
-.acknowledgements-content .registration-underline { display: block; background: #bd4d00; }
-.acknowledgements-content p { max-width: 690px; margin: 28px auto 0 0; color: #42566b; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.9; }
+.acknowledgements-page { min-height: calc(100svh - 190px); padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff; }
+.acknowledgements-content { width: min(100%, 1225px); margin: 0 auto; }
+.acknowledgements-content h1,
+.acknowledgements-content h2 { margin: 0; color: #c00000; text-align: center; font: 700 clamp(28px, 3vw, 40px)/1.2 Arial, Helvetica, sans-serif; }
+.acknowledgement-rule { display: block; width: min(260px, 60vw); height: 4px; margin: 10px auto 0; border-radius: 4px; background: #355477; }
+.acknowledgements-content p { max-width: 1225px; margin: 64px auto 0; color: #173b51; font: 14px/1.45 Arial, Helvetica, sans-serif; text-align: left; }
+.homepage-acknowledgements.section { max-width: none; padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff; }
 .nav > a[aria-current="page"] { color: #bd4d00; font-weight: 700; }
-.homepage-acknowledgements .section-title { margin: 0 0 18px; }
-.homepage-acknowledgements > p { max-width: 900px; margin: 0; color: #53677b; font-size: 14px; line-height: 1.8; }
 @media (max-width: 700px) {
   .committee-tabs-layout { grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .committee-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
@@ -555,8 +555,9 @@ html, body, #root, main { max-width: 100%; }
   .registration-fees { min-width: 600px; }
   .registration-fees th, .registration-fees td { padding: 13px 14px; }
   .registration-fees tbody th, .registration-fees tbody td { font-size: 15px; }
-  .acknowledgements-page { min-height: calc(100svh - 150px); padding: 42px 18px; }
+  .acknowledgements-page { min-height: calc(100svh - 150px); padding: 72px 22px 76px; }
   .header .nav > a[aria-current="page"] { color: #ff9f43 !important; }
-  .acknowledgements-content p { line-height: 1.75; }
-  .homepage-acknowledgements > p { font-size: 14px; line-height: 1.75; }
+  .homepage-acknowledgements.section { padding: 72px 22px 76px; }
+  .acknowledgements-content h1, .acknowledgements-content h2 { font-size: clamp(26px, 7vw, 34px); }
+  .acknowledgements-content p { margin-top: 38px; font-size: 14px; line-height: 1.55; }
 }
