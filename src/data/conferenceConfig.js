@@ -1,6 +1,7 @@
 export const CONFERENCE_START = '2027-03-16T00:00:00+05:30';
 
 const overview = 'NRCTCES 2027 aims to address critical and emerging research challenges in climate science, energy, and sustainability by promoting innovative approaches and advanced technological solutions. The conference will emphasize the transformative role of Artificial Intelligence (AI), Machine Learning (ML), and Computational Intelligence in advancing environmental sustainability, improving energy efficiency, and addressing climate-related challenges. By bringing together researchers, academicians, industry professionals, and technology innovators, NRCTCES 2027 will provide a dynamic platform for presenting original research, exchanging knowledge, fostering interdisciplinary collaboration, and engaging in meaningful discussions to shape sustainable technological advancements.';
+export const CMT_ACKNOWLEDGEMENT = 'The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.';
 
 const importantDates = [
   { label: 'Paper Submission Opens', date: '19 October 2026', isoDate: '2026-10-19' },
@@ -63,7 +64,7 @@ export const conferenceConfig = {
   registration: { status: 'Registrations are closed', deadline: '15 February 2027', formUrl: '' },
   partners: [],
   acknowledgements: [
-    'The Microsoft CMT service was used for managing the peer-review process for this conference. This service was provided free of charge by Microsoft, which bore all associated expenses, including costs for Azure cloud services, software development, and support.',
+    CMT_ACKNOWLEDGEMENT,
   ],
   registrationCategories: ['Student', 'Research Scholar', 'Faculty / Academician', 'Industry Professional'],
   submissionUrl: '', contact: {
