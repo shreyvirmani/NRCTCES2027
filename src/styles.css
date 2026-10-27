@@ -538,13 +538,18 @@ html, body, #root, main { max-width: 100%; }
 .registration-fees tbody td { color: #344d62; font-variant-numeric: tabular-nums; }
 .registration-fees tbody th,
 .registration-fees tbody td { font-size: 17px; }
-.acknowledgements-page { min-height: calc(100svh - 190px); padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff; }
+.acknowledgements-page { min-height: calc(100svh - 190px); padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff !important; color: #173b51; }
 .acknowledgements-content { width: min(100%, 1225px); margin: 0 auto; }
 .acknowledgements-content h1,
 .acknowledgements-content h2 { margin: 0; color: #c00000; text-align: center; font: 700 clamp(28px, 3vw, 40px)/1.2 Arial, Helvetica, sans-serif; }
 .acknowledgement-rule { display: block; width: min(260px, 60vw); height: 4px; margin: 10px auto 0; border-radius: 4px; background: #355477; }
 .acknowledgements-content p { max-width: 1225px; margin: 64px auto 0; color: #173b51; font: 14px/1.45 Arial, Helvetica, sans-serif; text-align: left; }
-.homepage-acknowledgements.section { max-width: none; padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff; }
+.homepage-acknowledgements.section { max-width: none; padding: clamp(100px, 12vw, 160px) 30px 110px; background: #fff !important; color: #173b51; }
+.paper-guidelines-panel .status-label + .cmt-acknowledgement-label { margin: 30px 0 6px !important; }
+.cmt-acknowledgement { margin: 0 !important; color: #42566b !important; font-size: 13px !important; line-height: 1.8 !important; }
+.submission-placeholder-link { color: #1769aa; text-decoration: underline; text-underline-offset: 2px; }
+.submission-placeholder-link:hover { color: #bd4d00; }
+.blank-submission-page { position: fixed; inset: 0; min-height: 100svh; background: #fff; }
 .nav > a[aria-current="page"] { color: #bd4d00; font-weight: 700; }
 @media (max-width: 700px) {
   .committee-tabs-layout { grid-template-columns: minmax(0, 1fr); gap: 14px; }
@@ -558,6 +563,7 @@ html, body, #root, main { max-width: 100%; }
   .acknowledgements-page { min-height: calc(100svh - 150px); padding: 72px 22px 76px; }
   .header .nav > a[aria-current="page"] { color: #ff9f43 !important; }
   .homepage-acknowledgements.section { padding: 72px 22px 76px; }
+  .paper-guidelines-panel .status-label + .cmt-acknowledgement-label { margin-top: 26px !important; }
   .acknowledgements-content h1, .acknowledgements-content h2 { font-size: clamp(26px, 7vw, 34px); }
   .acknowledgements-content p { margin-top: 38px; font-size: 14px; line-height: 1.55; }
 }
